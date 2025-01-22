@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-
+    
     int pontos;
     char nome[20], area[20], pib[20], populacao[20];
 
