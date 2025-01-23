@@ -5,7 +5,7 @@ int main() {
     int pontos;
     char nome[20], area[20], pib[20], populacao[20];
 
-        printf("Digite o Nome de Uma Cidade que faz Parte do Estado de Alagoas: \n");
+        printf("Digite o Nome de Uma Cidade que faz Parte do Estado de Maranhão: \n");
         scanf("%s", &nome);
 
         printf("Digite o Número da População: \n");
