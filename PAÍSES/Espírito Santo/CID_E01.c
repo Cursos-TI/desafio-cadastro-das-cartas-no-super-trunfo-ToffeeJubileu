@@ -3,7 +3,7 @@
 int main() {
     
     int pontos;
-    float popul, por, area, pib, populacao;
+    float popul, por, area, pib, populacao, sp;
     char nome[20];
 
         printf("Digite o Nome de Uma Cidade que faz Parte do Estado de Espírito Santo: \n");
@@ -23,6 +23,7 @@ int main() {
 
         popul = (populacao / area);
         por = (pib / populacao);
+        sp = (populacao + area + pib + pontos);
 
     printf("Cidade: %s\n", nome);
     printf("População: %.2f HAB\n", populacao);
@@ -32,6 +33,10 @@ int main() {
 
     printf("Pessoas por Km²: %.2f km²\n", popul);
     printf("Salário por Pessoas: %.2f Min.\n", por);
+    printf("Super Poder: %.2f Pontos\n", sp);
+
+    printf("Pessoas por Km² é menor do que PIB?: %d\n", popul < pib);
+    printf("Pontos Turísticos é maior do que Super Poder?: %d\n", pontos > sp);
 
 return 0;
 
