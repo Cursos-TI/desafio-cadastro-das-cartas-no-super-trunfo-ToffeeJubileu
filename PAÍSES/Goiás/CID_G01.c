@@ -6,6 +6,7 @@ int main() {
     float popul, por, area, pib, populacao, sp;
     char nome[20];
 
+        // cadastrado da carta
         printf("Digite o Nome de Uma Cidade que faz Parte do Estado de Goiás: \n");
         scanf("%s", &nome);
 
@@ -21,10 +22,12 @@ int main() {
         printf("Digite o Número de Pontos Turísticos: \n");
         scanf("%d", &pontos);
 
+        // calculando os ponto da carta
         popul = (populacao / area);
         por = (pib / populacao);
         sp = (populacao + area + pib + pontos);
 
+        //imprimido a informação da carta registrada
     printf("Cidade: %s\n", nome);
     printf("População: %.2f HAB\n", populacao);
     printf("Área: %.2f Km²\n", area);
@@ -35,6 +38,7 @@ int main() {
     printf("Salário por Pessoas: %.2f Min.\n", por);
     printf("Super Poder: %.2f Pontos\n", sp);
 
+    //imprimido e calculando a imformação da carta registrada
     printf("Pessoas por Km² é menor do que PIB?: %d\n", popul < pib);
     printf("Pontos Turísticos é maior do que Super Poder?: %d\n", pontos > sp);
 
